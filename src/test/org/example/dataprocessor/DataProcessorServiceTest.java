@@ -53,7 +53,7 @@ class DataProcessorServiceTest {
         assertTrue(Files.exists(p), "target/result.txt should be created");
         String content = Files.readString(p).trim();
         assertTrue(content.equals("Result = 6.0") || content.startsWith("Result = 6"),
-                "File must contain 'Result = 6.0'");
+                "FileOutput must contain 'Result = 6.0'");
     }
 
     @Test
